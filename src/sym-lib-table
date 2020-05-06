@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name wemos_mini)(type Legacy)(uri ${KIPRJMOD}/Lib/wemos_mini.lib)(options "")(descr ""))
+  (lib (name TexasInstruments)(type Legacy)(uri ${KIPRJMOD}/Lib/TexasInstruments.lib)(options "")(descr ""))
+  (lib (name Local_symbols)(type Legacy)(uri ${KIPRJMOD}/Lib/Local_symbols.lib)(options "")(descr ""))
+)

@@ -1,0 +1,1165 @@
+<html style="height: 100%;"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="Modulo%20Wemos%20D1%20Mini_files/osd.js"></script><script src="Modulo%20Wemos%20D1%20Mini_files/adsbygoogle.js"></script><script type="text/javascript" async="" src="Modulo%20Wemos%20D1%20Mini_files/analytics.js"></script><script src="Modulo%20Wemos%20D1%20Mini_files/show_ads_impl_fy2019.js" id="google_shimpl"></script><script async="" src="Modulo%20Wemos%20D1%20Mini_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109100155-1');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="keywords" content="wemos d1 mini, iot, ">
+<meta name="description" content="Descrizione ed esempi di utilizzo modulo Wemos D1 Mini">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<title>Modulo Wemos D1 Mini</title>
+<style>
+<!--
+-->
+</style>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="Modulo%20Wemos%20D1%20Mini_files/translateelement.css"><script type="text/javascript" charset="UTF-8" src="Modulo%20Wemos%20D1%20Mini_files/main_it.js"></script><script type="text/javascript" charset="UTF-8" src="Modulo%20Wemos%20D1%20Mini_files/element_main.js"></script><link rel="preload" href="Modulo%20Wemos%20D1%20Mini_files/integrator.js" as="script"><script type="text/javascript" src="Modulo%20Wemos%20D1%20Mini_files/integrator.js"></script><link rel="preload" href="Modulo%20Wemos%20D1%20Mini_files/integrator_002.js" as="script"><script type="text/javascript" src="Modulo%20Wemos%20D1%20Mini_files/integrator_002.js"></script></head>
+
+<body style="position: relative; min-height: 100%; top: 0px;" background="Modulo%20Wemos%20D1%20Mini_files/sfondo.jpg">
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr>
+    <td width="30%" height="1" align="center"><p align="center">
+		<a href="https://win.adrirobot.it/wemos_d1_mini/wemos_d1_mini.htm">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_d1_mini_logo.gif" width="149" height="123" border="0"></a></p></td>
+    <td width="40%" height="35" align="center">
+      <p align="center"><b><font size="6" face="Consolas" color="#00979D">Modulo 
+		WeMos D1 mini</font></b></p><p align="center">
+		<span style="font-family: Georgia, 'Bitstream Charter', serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: 24px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline; float: none">ultimo aggiornamento 
+		27 marzo 2019</span></p></td>
+    <td width="30%" height="1" align="center">
+      <a target="_top" href="https://www.adrirobot.it/">
+			<img src="Modulo%20Wemos%20D1%20Mini_files/logo_motore-ricerca.gif" width="200" height="55" border="0"></a><br>
+		<a target="_blank" href="http://www.facebook.com/pages/Adrirobot/318949048122955">
+	<img src="Modulo%20Wemos%20D1%20Mini_files/facebook_logo.gif" width="40" height="40" border="0"></a> <a target="_blank" href="https://www.youtube.com/user/adrirobot">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/youtube_logo.gif" width="40" height="40" border="0"></a> <a target="_blank" href="https://www.linkedin.com/in/adriano-gandolfo/">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/linkedin_logo.gif" width="40" height="40" border="0"></a> <a target="_blank" href="https://www.instagram.com/adrirobot/">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/Instagram_logo.gif" width="40" height="40" border="0"></a>
+	<a target="_blank" href="https://it.pinterest.com/adrirobot/">
+	<img src="Modulo%20Wemos%20D1%20Mini_files/pinterest_logo.gif" width="40" height="40" border="0"> </a><div id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="Widget di traduzione della lingua"><option value="" selected="selected">Seleziona lingua</option><option value="af">Afrikaans</option><option value="sq">Albanese</option><option value="am">Amarico</option><option value="ar">Arabo</option><option value="hy">Armeno</option><option value="az">Azero</option><option value="eu">Basco</option><option value="bn">Bengalese</option><option value="be">Bielorusso</option><option value="my">Birmano</option><option value="bs">Bosniaco</option><option value="bg">Bulgaro</option><option value="ca">Catalano</option><option value="ceb">Cebuano</option><option value="cs">Ceco</option><option value="ny">Chichewa</option><option value="zh-CN">Cinese (semplificato)</option><option value="zh-TW">Cinese (tradizionale)</option><option value="ko">Coreano</option><option value="co">Corso</option><option value="ht">Creolo haitiano</option><option value="hr">Croato</option><option value="ku">Curdo (kurmanji)</option><option value="da">Danese</option><option value="iw">Ebraico</option><option value="eo">Esperanto</option><option value="et">Estone</option><option value="tl">Filippino</option><option value="fi">Finlandese</option><option value="fr">Francese</option><option value="fy">Frisone</option><option value="gd">Gaelico scozzese</option><option value="gl">Galiziano</option><option value="cy">Gallese</option><option value="ka">Georgiano</option><option value="ja">Giapponese</option><option value="jw">Giavanese</option><option value="el">Greco</option><option value="gu">Gujarati</option><option value="ha">Hausa</option><option value="haw">Hawaiano</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="ig">Igbo</option><option value="id">Indonesiano</option><option value="en">Inglese</option><option value="ga">Irlandese</option><option value="is">Islandese</option><option value="kn">Kannada</option><option value="kk">Kazako</option><option value="km">Khmer</option><option value="rw">Kinyarwanda</option><option value="ky">Kirghiso</option><option value="lo">Lao</option><option value="la">Latino</option><option value="lv">Lettone</option><option value="lt">Lituano</option><option value="lb">Lussemburghese</option><option value="mk">Macedone</option><option value="ml">Malayalam</option><option value="ms">Malese</option><option value="mg">Malgascio</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolo</option><option value="ne">Nepalese</option><option value="no">Norvegese</option><option value="or">Odia (oriya)</option><option value="nl">Olandese</option><option value="ps">Pashto</option><option value="fa">Persiano</option><option value="pl">Polacco</option><option value="pt">Portoghese</option><option value="pa">Punjabi</option><option value="ro">Rumeno</option><option value="ru">Russo</option><option value="sm">Samoano</option><option value="sr">Serbo</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="si">Singalese</option><option value="sk">Slovacco</option><option value="sl">Sloveno</option><option value="so">Somalo</option><option value="es">Spagnolo</option><option value="su">Sundanese</option><option value="sv">Svedese</option><option value="sw">Swahili</option><option value="tg">Tagiko</option><option value="th">Tailandese</option><option value="ta">Tamil</option><option value="tt">Tataro</option><option value="de">Tedesco</option><option value="te">Telugu</option><option value="tr">Turco</option><option value="tk">Turkmeno</option><option value="uk">Ucraino</option><option value="ug">Uiguro</option><option value="hu">Ungherese</option><option value="ur">Urdu</option><option value="uz">Uzbeco</option><option value="vi">Vietnamita</option><option value="xh">Xhosa</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></div>Powered by <span style="white-space:nowrap"><a class="goog-logo-link" href="https://translate.google.com/" target="_blank"><img src="Modulo%20Wemos%20D1%20Mini_files/googlelogo_color_42x16dp.png" style="padding-right: 3px" alt="Google Traduttore" width="37px" height="14px">Traduttore</a></span></div></div><div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'it'
+  }, 'google_translate_element');
+}
+</script><script src="Modulo%20Wemos%20D1%20Mini_files/element.js"></script>
+    </td>
+  </tr>
+  </tbody></table>
+		<p align="center">
+<!-- Spazio per banner centrale -->
+</p><p align="center">	
+		
+		<table width="100%" border="0">
+			<tbody><tr>
+				<td rowspan="2" width="20">
+				<p align="center">&nbsp;</p></td>
+				<td width="60%">
+				<p align="center"><font face="Verdana"><b>
+				<a target="_blank" href="https://jlcpcb.com/">JLCPCB - 2$ per prototipi di PCB, di qualsiasi colore. Produzione in 24 ore!</a></b><br>
+<a target="_blank" href="https://jlcpcb.com/">L'Azienda di prototipi PCB più popolare, con oltre 700.000 clienti in tutto il mondo!</a><br>
+<b>Sorridi a tutto il mondo qualunque cosa accada!</b></font>
+				</p></td>
+				<td rowspan="2" width="20%">
+				<p align="center">
+				<a target="_blank" href="https://www.pcbonline.com/">
+				<img src="Modulo%20Wemos%20D1%20Mini_files/280x232.gif" width="280" height="232" border="0"></a></p></td>
+			</tr>
+			<tr>
+				<td width="60%">
+				<p align="center">
+<a target="_blank" href="https://www.pcbway.com/?from=adrirobot.it2020">
+<img src="Modulo%20Wemos%20D1%20Mini_files/Banner-for-iT-2018-11-29-6.gif" width="728" height="90" border="0"></a></p></td>
+			</tr>
+</tbody></table></p><h1 align="left"><b><font size="5" face="Consolas" color="#00979D">Indice</font></b></h1>
+<ul>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+	<font face="Georgia"><a href="#Descrizione">Descrizione</a>;</font></b></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+	<font face="Georgia"><a href="#Alcuni_esempi_di_shield_disponibili">Alcuni 
+	esempi di shield disponibili;</a></font></b></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+	<font face="Georgia"><a href="#Specifiche_tecniche">Specifiche tecniche;</a></font></b></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+	<font face="Georgia"><a href="#Interfaccia_I2C">Interfaccia I2C</a></font></b></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+	<font face="Georgia"><a href="#Interfaccia_SPI">Interfaccia SPI</a></font></b></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+	<font face="Georgia"><a href="#Pinout_Completo">Pinout Completo</a></font></b></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+	<font face="Georgia"><a href="#Foto_del_modulo">Foto del modulo;</a></font></b></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+	<font face="Georgia"><a href="#Componenti_presenti_sul_modulo">Componenti presenti sul modulo;</a></font></b></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+	<font face="Georgia"><a href="#Impostazione_dellIDE_di_Arduino">Impostazione dell'IDE di Arduino;</a></font></b></p>
+	<ul>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+		<font face="Georgia">
+		<a href="#Installazione_del_driver_per_il_chip_CH340G">Installazione del driver per il chip CH340G;</a></font></b></p>
+		</li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+		<font face="Georgia"><a href="#Installazione_del_driver_della_scheda">Installazione del driver della scheda;</a></font></b></p>
+		</li>
+	</ul></li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+	<font face="Georgia"><a href="#Esempi_di_utilizzo_del_modulo">Esempi di 
+	utilizzo</a></font></b></p>
+	<ul>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+		<font face="Georgia">
+		<a href="#Lettura_di_temperatura_e_umidità_con_sensore_DH11">Lettura di 
+temperatura e umidità con sensore DH11</a></font></b></p></li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left"> <b>
+		<font face="Georgia"><a href="#Wemos_D1_mini_multi_test_shield">Wemos D1 mini multi 
+		test shield</a></font></b></p></li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+		<font face="Georgia"><a href="#Gestione_display_OLED">Gestione display OLED</a></font></b></p>
+		</li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left">
+<b><font face="Georgia"><a href="#Gestione_MatrixLED_Shield">Gestione MatrixLED Shield</a></font></b></p>
+		</li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left">
+<font face="Georgia"> <b>
+<a href="#Wemos_D1_mini_meter_shield">Meter shield per Wemos D1 mini</a></b></font></p>
+		</li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left">
+<b><font face="Georgia"><a href="#Sensore_di_luce_TSL2561">Sensore di luce TSL2561</a></font></b></p>
+		</li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left">
+		<b><font face="Georgia">
+<a href="#Display_65k_Colori_OLED_96x64_interfaccia_SPI">Display 65k Colori OLED 
+		96x64
+		interfaccia 
+		SPI</a></font></b></p>
+		</li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left">
+<b><font face="Georgia"><a href="#Motor_Controller_per_DC_Motor_FT-SMC-2CH">Motor 
+	Controller per DC Motor
+	FT-SMC-2CH</a></font></b></p>
+		</li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left">
+<b><font face="Georgia"><a href="#Convertitore_ADC_16-bit_4_Canali_ADS1115">
+Convertitore ADC 16-bit 4 Canali ADS1115</a></font></b></p>
+		</li>
+		<li>
+		<p style="margin-top: 0; margin-bottom: 0" align="left">
+<font face="Georgia"><b>Test modulo KY-009 RGB 
+full color LED SMD module</b></font></p>
+		</li>
+	</ul></li>
+</ul>
+<h1 align="center"><b><font size="5" face="Consolas" color="#00979D">
+<a name="Descrizione">Descrizione</a></font></b></h1>
+<p align="left"><font face="Georgia">Il Modulo 
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/wemos_d1_mini.htm"> <b>WeMos D1 mini</b> </a>è basato sul 
+microcontrollore <b>Wi-Fi ESP8266 ESP-12F</b> che può essere programmato utilizzando 
+l'IDE di Arduino oppure NodeMCU. La semplicità della programmazione che può 
+essere effettuata anche in modalità wireless e l'ampia disponibilità di shield 
+aggiuntivi permettono di sviluppare il proprio progetto di "Internet delle cose" 
+in tempi estremamente rapidi.<br>
+Il modulo <a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/wemos_d1_mini.htm"> <b>WeMos D1 mini</b> </a>&nbsp;è dotato di una interfaccia USB realizzata tramite il 
+convertitore seriale-USB <b><a href="#CH340G">CH340</a></b> <br>
+Dal connettore USB viene anche 
+prelevata l'alimentazione a 5V, un regolatore interno (tipo <b><a href="#RT9013">
+	RT9013</a></b>)<b> </b> si occupa di generare 
+l'alimentazione a 3,3V per il modulo ESP-12F. Per evitare confusione tutti i pin 
+di I/O sono chiaramente etichettati. <br>
+Nota: Tutti gli I/O supportano una tensione massima di 3,3V</font></p>
+<p align="center">
+<img src="Modulo%20Wemos%20D1%20Mini_files/wemos-d1-mini-pinpout.jpg" width="802" height="466" border="0"></p>
+<p align="center">
+<!-- Spazio per banner 1 -->
+<a target="_blank" href="https://www.homotix.it/">
+<img src="Modulo%20Wemos%20D1%20Mini_files/BANNER-_HOMOTIX.jpg" alt="homotix"></a></p>
+<p align="center">
+</p><p align="center">
+<!-- Spazio per banner 2 -->
+</p><p align="center"></p><p align="center">
+<!-- Spazio per banner 3 -->
+</p><p align="center"></p><p align="center">
+<b><font face="Georgia">Questo articolo è stato pubblicato nella
+<a target="_blank" href="https://www.homotix.it/articoli/introduzione-alla-wemos-mini">
+sezione Articoli del sito WWW.HOMOTIX.IT</a></font></b></p>
+<p align="center">
+<a target="_blank" href="https://www.homotix.it/articoli/introduzione-alla-wemos-mini">
+<img src="Modulo%20Wemos%20D1%20Mini_files/WeMos_d1_mini-homotix.jpg" width="600" height="359" border="0"></a></p>
+<h1 align="center">
+<b><font size="5" face="Consolas" color="#00979D">
+<a name="Alcuni_esempi_di_shield_disponibili">Alcuni 
+esempi di shield disponibili</a></font></b></h1>
+<p align="justify">
+<font face="Georgia">Per l'utilizzo del modulo <b>WeMos D1 mini</b> sono già 
+disponibili dei mini shield e molti sono in preparazione, tra i modelli già 
+disponibili troviamo: <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/dht11_shield_for_wemos_d1_mini.htm">DHT Shield</a>,
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/Motor_Shield_For_Wemos_D1_mini.htm">Shield Motore</a>,
+Buzzer shield,
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/OLED_Shield_for_wemos_d1_mini.htm">OLED Shield</a>,
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/battery_shield_for_wemos_d1_mini.htm">Battery Shield</a>,
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/DC_Power_shield_for_wemos_d1_mini.htm">DC 
+Power Shield</a>,
+Protoboard, 
+DHT Pro Shield,
+Micro SD Card Shield,
+WS2812B RGB 
+Shield,
+Button shield,
+Relay shield,&nbsp; ect</b></font></p>
+<table id="table69" width="100%" border="0">
+	<tbody><tr>
+		<td width="25%" align="center">
+		<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/dht11_shield_for_wemos_d1_mini.htm">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wemos-d1-dht11-shield_logo.gif" width="122" height="123" border="0"></a></td>
+		<td width="25%" align="center">
+		<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/Motor_Shield_For_Wemos_D1_mini.htm">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_motor_shield_logo.gif" width="126" height="123" border="0"></a></td>
+		<td width="25%" align="center">
+		<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/battery_shield_for_wemos_d1_mini.htm">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wemos-d1-battery-shield_logo.gif" width="125" height="123" border="0"></a></td>
+		<td width="25%" align="center">
+		<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/DC_Power_shield_for_wemos_d1_mini.htm">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wemos-d1-mini-power-shield_logo.gif" width="120" height="123" border="0"></a></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center">
+<font face="Georgia"> <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/dht11_shield_for_wemos_d1_mini.htm">DHT Shield</a>,</b></font></td>
+		<td width="25%" align="center">
+<font face="Georgia"> <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/Motor_Shield_For_Wemos_D1_mini.htm">Shield Motore</a></b></font></td>
+		<td width="25%" align="center">
+<font face="Georgia"> <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/battery_shield_for_wemos_d1_mini.htm">Battery Shield</a></b></font></td>
+		<td width="25%" align="center"> <b>
+<font face="Georgia">
+		<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/DC_Power_shield_for_wemos_d1_mini.htm">DC 
+Power Shield</a></font></b></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center">
+		<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/OLED_Shield_for_wemos_d1_mini.htm">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wemos-d1-oled-shield_logo.gif" width="131" height="123" border="0"></a></td>
+		<td width="25%" align="center">
+		<a href="https://win.adrirobot.it/display_OLED/Display_colori_OLED_96x64_I2C_SSD1331.htm">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/oled-ssd1331_logo.gif" width="127" height="121" border="0"></a></td>
+		<td width="25%" align="center">
+		<a href="https://win.adrirobot.it/EasyEDA/EasyEDA_Wemos_D1_mini_meter_shield.htm">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_meter_shield.jpg" width="125" height="120" border="0"></a></td>
+		<td width="25%" align="center">
+		<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/multi_test_wemos_shield.html">
+<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_multi_test_shield_logo.jpg" width="148" height="120" border="0"></a></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center">
+<font face="Georgia"> <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/OLED_Shield_for_wemos_d1_mini.htm">OLED Shield</a></b></font></td>
+		<td width="25%" align="center">
+		<b><font face="Georgia">
+		<a target="_self" href="https://win.adrirobot.it/display_OLED/Display_colori_OLED_96x64_I2C_SSD1331.htm">Display 65k Colori OLED 
+		96x64<br>
+		interfaccia 
+		SPI</a></font></b></td>
+		<td width="25%" align="center"><font face="Georgia"> <b>
+<a href="https://win.adrirobot.it/EasyEDA/EasyEDA_Wemos_D1_mini_meter_shield.htm">Meter shield</a></b></font></td>
+		<td width="25%" align="center"><b><font face="Georgia">
+		<a target="_blank" href="https://win.adrirobot.it/wemos_d1_mini/multi_test_wemos_shield.html">Multi 
+		test shield</a></font></b></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center">
+		<a target="_self" href="https://win.adrirobot.it/sensori/tsl2561/sensore_tsl2561.htm">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/tsl2561.png" width="111" height="103" border="0"></a></td>
+		<td width="25%" align="center">
+    <a target="_self" href="https://win.adrirobot.it/motor_driver/FT-SMC-2CH/motor_driver_FT-SMC-2CH.htm" style="color: #00c; font-family: arial,sans-serif">
+	<img src="Modulo%20Wemos%20D1%20Mini_files/ft-smc-2ch_logo.gif" width="187" height="133" border="0"></a></td>
+		<td width="25%" align="center">
+		<a target="_self" href="https://win.adrirobot.it/ADC_ADS1115/ADC_ADS1115.htm">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/ads1115_logo.jpg" width="137" height="130" border="0"></a></td>
+		<td width="25%" align="center"> 
+		<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/Matrix_LED_Shield_for_wemos_d1_mini.htm"> 
+		<img src="Modulo%20Wemos%20D1%20Mini_files/Matrix_Led_Shield_logo.jpg" width="114" height="123" border="0"></a><img src="Modulo%20Wemos%20D1%20Mini_files/new_mini.gif" width="42" height="31" border="0"></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center"><b><font face="Georgia">
+		<a target="_self" href="https://win.adrirobot.it/sensori/tsl2561/sensore_tsl2561.htm">Sensore di luce TSL2561</a></font></b></td>
+		<td width="25%" align="center"><b><font face="Georgia">
+		<a target="_self" href="https://win.adrirobot.it/motor_driver/FT-SMC-2CH/motor_driver_FT-SMC-2CH.htm">
+		driver per motori FT-SMC-2CH</a></font></b></td>
+		<td width="25%" align="center"><font face="Georgia"><b>
+		<a target="_self" href="https://win.adrirobot.it/ADC_ADS1115/ADC_ADS1115.htm">ADC 16-bit 4 
+Canali ADS1115</a></b></font></td>
+		<td width="25%" align="center"> <font face="Georgia"><b>
+		<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/Matrix_LED_Shield_for_wemos_d1_mini.htm">Matrix Led Shield</a></b></font></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wemos-d1-protoboard-shield_logo.gif" width="139" height="123" border="0"><img src="Modulo%20Wemos%20D1%20Mini_files/under_construction.gif" width="48" height="48" border="0"></td>
+		<td width="25%" align="center">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wemos-d1-tripler_base-shield_logo.gif" width="216" height="123" border="0"><img src="Modulo%20Wemos%20D1%20Mini_files/under_construction.gif" width="48" height="48" border="0"></td>
+		<td width="25%" align="center">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wemos-d1-buzzer-shield_logo.gif" width="135" height="123" border="0"><img src="Modulo%20Wemos%20D1%20Mini_files/under_construction.gif" width="48" height="48" border="0"></td>
+		<td width="25%" align="center">
+<img src="Modulo%20Wemos%20D1%20Mini_files/rele_shield_logo.jpg" width="123" height="115" border="0"><img src="Modulo%20Wemos%20D1%20Mini_files/under_construction.gif" width="48" height="48" border="0"></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center"><font face="Georgia"><b>ProtoBoard Shield</b></font></td>
+		<td width="25%" align="center"><font face="Georgia"><b>Tripler Base</b></font></td>
+		<td width="25%" align="center">
+<font face="Georgia"> <b>
+Buzzer shield,</b></font></td>
+		<td width="25%" align="center">
+<font face="Georgia"> <b>
+Relay Shield</b></font></td>
+	</tr>
+</tbody></table>
+<h1 align="center"><b><font size="5" face="Consolas" color="#00979D">
+<a name="Specifiche_tecniche">Specifiche tecniche</a></font></b></h1>
+<ul>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left">
+	<font face="Georgia">11 I/O digitali, tutti i pin sono provvisti di 
+	interrupt e supportano PWM, I2C , One-Wire (D1-SCL-D2 -SDA)</font></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left">
+	<font face="Georgia">1 Pin analogico (tensione massima di ingresso 3.2V)</font></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left">
+	<font face="Georgia">Connessione Micro USB</font></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left">
+	<font face="Georgia">Compatibile con Arduino e con nodemcu</font></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left">
+	<font face="Georgia">Dimensioni (mm): 28x24x18</font></p></li>
+</ul>
+<h1 align="center"><b><font size="5" face="Consolas" color="#00979D">
+<a name="Interfaccia_I2C">Interfaccia I2C</a></font></b></h1>
+<p style="margin-top: 0; margin-bottom: 0" align="left"><font face="Georgia">Il 
+collegamento tramite interfaccia I2C può essere utilizzato per connettere fino a 
+127 nodi tramite un bus che richiede solo due cavi dati, noti come SDA e SCL.</font></p>
+<ul>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left">
+	<font face="Georgia">SDA =&gt; D2.</font></p></li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left">
+	<font face="Georgia">SCL =&gt; D1</font></p></li>
+</ul>
+<h1 align="center"><b><font size="5" face="Consolas" color="#00979D">
+<a name="Interfaccia_SPI">Interfaccia SPI</a></font></b></h1>
+<p style="margin-top: 0; margin-bottom: 0" align="left"><font face="Georgia">Il 
+collegamento SPI è molto più semplice di I2C. Master e slave sono collegati da 
+tre fili di dati, solitamente chiamati MISO, (Master in, Slave out), MOSI 
+(Master out, Slave in) e M-CLK.</font></p>
+<ul>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left">
+	<font face="Georgia">M-CLK =&gt; D5</font></p></li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left">
+	<font face="Georgia">MISO =&gt; D6</font></p></li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="left">
+	<font face="Georgia">MOSI =&gt; D7</font></p></li>
+</ul>
+<p style="margin-top: 0; margin-bottom: 0" align="left"><font face="Georgia">
+(SPI Bus SS (CS) è D8.)</font></p>
+<h1 align="center"><b><font size="5" face="Consolas" color="#00979D">
+<a name="Pinout_Completo">Pinout Completo</a></font></b></h1>
+<table id="table67" width="100%" border="0">
+	<tbody><tr>
+		<td align="center">
+		<table id="table68" width="44%" border="0">
+			<tbody><tr>
+				<td bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">Pin</font></b></p></td>
+				<td width="252" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+				<font face="Georgia">Function</font></b></p></td>
+				<td width="133" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left"><b>
+				<font face="Georgia">ESP-8266 Pin</font></b></p></td>
+			</tr>
+			<tr>
+				<td>
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">TX</font></b></p></td>
+				<td width="252">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">TXD</font></p></td>
+				<td width="133">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">TXD</font></p></td>
+			</tr>
+			<tr>
+				<td bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">RX</font></b></p></td>
+				<td width="252" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">RXD</font></p></td>
+				<td width="133" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">RXD</font></p></td>
+			</tr>
+			<tr>
+				<td>
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">A0</font></b></p></td>
+				<td width="252">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">Analog input-max 3.3V input</font></p></td>
+				<td width="133">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">A0</font></p></td>
+			</tr>
+			<tr>
+				<td bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">D0</font></b></p></td>
+				<td width="252" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">IO</font></p></td>
+				<td width="133" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">GPIO16</font></p></td>
+			</tr>
+			<tr>
+				<td>
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">D1</font></b></p></td>
+				<td width="252">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">IO-SCL</font></p></td>
+				<td width="133">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">GPIO5</font></p></td>
+			</tr>
+			<tr>
+				<td bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">D2</font></b></p></td>
+				<td width="252" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">IO-SDA</font></p></td>
+				<td width="133" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">GPIO4</font></p></td>
+			</tr>
+			<tr>
+				<td>
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">D3</font></b></p></td>
+				<td width="252">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">IO-10k Pull-up</font></p></td>
+				<td width="133">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">GPIO0</font></p></td>
+			</tr>
+			<tr>
+				<td bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">D4</font></b></p></td>
+				<td width="252" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">IO-10k Pull-up-BUILTIN_LED</font></p></td>
+				<td width="133" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">GPIO2</font></p></td>
+			</tr>
+			<tr>
+				<td>
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">D5</font></b></p></td>
+				<td width="252">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">IO-SCK</font></p></td>
+				<td width="133">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">GPIO14</font></p></td>
+			</tr>
+			<tr>
+				<td bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">D6</font></b></p></td>
+				<td width="252" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">IO-MISO</font></p></td>
+				<td width="133" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">GPIO12</font></p></td>
+			</tr>
+			<tr>
+				<td>
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">D7</font></b></p></td>
+				<td width="252">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">IO-MOSI</font></p></td>
+				<td width="133">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">GPIO13</font></p></td>
+			</tr>
+			<tr>
+				<td bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">D8</font></b></p></td>
+				<td width="252" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">IO-10k Pull-down-SS</font></p></td>
+				<td width="133" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">GPIO15</font></p></td>
+			</tr>
+			<tr>
+				<td>
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">G</font></b></p></td>
+				<td width="252">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">Ground</font></p></td>
+				<td width="133">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">GND</font></p></td>
+			</tr>
+			<tr>
+				<td bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">5V</font></b></p></td>
+				<td width="252" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">5V</font></p></td>
+				<td width="133" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">5V</font></p></td>
+			</tr>
+			<tr>
+				<td>
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">3V3</font></b></p></td>
+				<td width="252">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">3.3V</font></p></td>
+				<td width="133">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">3.3V</font></p></td>
+			</tr>
+			<tr>
+				<td bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="center"><b>
+				<font face="Georgia">RST</font></b></p></td>
+				<td width="252" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">Reset</font></p></td>
+				<td width="133" bgcolor="#C0C0C0">
+				<p style="margin-top: 0; margin-bottom: 0" align="left">
+				<font face="Georgia">RST</font></p></td>
+			</tr>
+		</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<p style="margin-top: 0; margin-bottom: 0" align="left">&nbsp;</p>
+<h1 align="center"><b><font size="5" face="Consolas" color="#00979D">
+<a name="Foto_del_modulo">Foto del modulo</a></font></b></h1>
+<table id="table60" width="100%" border="0">
+	<tbody><tr>
+		<td align="center">
+		<b><font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/WeMos_d1_mini-02.jpg" width="400" height="400" border="0"></font></b><p>
+		<b><font face="Georgia">Bustina antistatica contenente il modulo</font></b></p></td>
+		<td align="center">
+		<b><font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/WeMos_d1_mini-06.jpg" width="400" height="400" border="0"></font></b><p>
+		<b><font face="Georgia">Contenuto della bustina antistatica</font></b></p></td>
+	</tr>
+	<tr>
+		<td align="center">
+		<b><font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/WeMos_d1_mini-11.jpg" width="400" height="400" border="0"></font></b><p>
+		<b><font face="Georgia">Modulo con connettori scelti per il montaggio</font></b></p></td>
+		<td align="center">
+		<b><font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/WeMos_d1_mini-13.jpg" width="400" height="400" border="0"></font></b><p>
+		<b><font face="Georgia">Modulo con connettori montati</font></b></p></td>
+	</tr>
+</tbody></table>
+<p align="center"><script type="text/javascript"><!--
+google_ad_client = "pub-6628714137256289";
+/* 728x90, creato 10/07/08 */
+google_ad_slot = "6892533036";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+&nbsp;<script type="text/javascript" src="Modulo%20Wemos%20D1%20Mini_files/show_ads.js">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;" data-ad-slot="6892533036"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" src="Modulo%20Wemos%20D1%20Mini_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-google-query-id="CIGg1-CXoegCFcarewodCxsBOg" data-load-complete="true" width="728" height="90" frameborder="0"></iframe></ins></ins></p>
+<p align="center"><b><font size="5" face="Consolas" color="#00979D">
+<a name="Componenti_presenti_sul_modulo">C</a></font></b><a name="Componenti_presenti_sul_modulo"><font size="5" face="Consolas" color="#00979D"><b>omponenti </b></font>
+<font size="5" face="Consolas" color="#00979D"><b>presenti sul modulo</b></font></a></p>
+<table id="table61" width="100%" border="0">
+	<tbody><tr>
+		<td align="center">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/WeMos_d1_mini-05.jpg" width="400" height="400" border="0"><p>
+		<b><font face="Georgia">Vista frontale del modulo D1 Mini</font></b></p></td>
+		<td align="center">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/WeMos_d1_mini-04.jpg" width="400" height="400" border="0"><p>
+		<b><font face="Georgia">Vista posteriore del modulo D1 Mini</font></b></p></td>
+	</tr>
+</tbody></table>
+<p align="center"><img src="Modulo%20Wemos%20D1%20Mini_files/wemos-d1-mini-shematics.jpg" width="936" height="657" border="0"></p>
+<p align="justify"><font face="Georgia">Sul modulo sono presenti, sul lato 
+superiore:</font></p>
+<ul>
+	<li>
+	<p align="justify"><font face="Georgia">&nbsp;il modulo ESP-12,&nbsp; con 
+	antenna Wi-Fi e un LED blu.</font></p>
+	<p align="center">
+	<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_d1_mini_ESP12.gif" width="397" height="273" border="0"></p>
+	</li>
+</ul>
+<p align="justify"><font face="Georgia">Sul lato inferiore:</font></p>
+<ul>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="justify">
+	<font face="Georgia">un pulsante con funzione di <b>RESET</b></font></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="justify">
+	<font face="Georgia">un regolatore di tensione tipo <b><a href="#RT9013">
+	RT9013</a></b> per ridurre la tensione da 5V ai 3.3V con relativi condensatori di livellamento</font></p>
+	</li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="justify">
+	<font face="Georgia">il chip <b><a href="#CH340G">CH340G</a> </b>utilizzato 
+	per la<b> </b>conversione seriale dei dati da USB a UART necessaria ad 
+	interfacciarti al chip ESP8266, questo tipo di chip è forse stata fatta 
+	perché il costo di questo chip decisamente inferiore al modello Atmega32U4 
+	usato per esempio per la scheda&nbsp; Arduino/Genuino. Per il suo utilizzo è 
+	però necessario installare un driver lato computer per essere riconosciuto 
+	correttamente dal computer come interfaccia seriale.</font></p></li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="justify">
+	<font face="Georgia">Due transistor NPN <b><a href="#S8050_SOT23">S8050 
+	SOT23</a></b></font></p></li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="justify">
+	<font face="Georgia">una porta micro USB, da cui è prelevata la tensione di 
+	alimentazione tramite un diodo di protezione </font><b><font face="Georgia">
+	<a href="#B5819">B5819</a></font></b></p></li>
+	<li>
+	<p style="margin-top: 0; margin-bottom: 0" align="justify">
+	<font face="Georgia">Varie resistenze</font></p></li>
+</ul>
+<table id="table54" width="100%" cellspacing="0" cellpadding="0" border="1">
+	<tbody><tr>
+		<td colspan="3" width="100%" align="center">
+		<font face="Georgia"><b><a name="RT9013">RT9013</a></b> <b>500mA, Low 
+		Dropout, Low Noise Ultra-Fast Without Bypass Capacitor CMOS LDO 
+		Regulator</b></font></td>
+	</tr>
+	<tr>
+		<td width="33%" align="center">
+		<font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/RT9013_pin.JPG" width="119" height="130" border="0"></font></td>
+		<td width="33%" align="center">
+		<b><font face="Georgia">
+				<img src="Modulo%20Wemos%20D1%20Mini_files/pdficon.gif" width="28" height="31" border="0"><br>
+		<a target="_blank" href="http://www.richtek.com/">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/richtek_logo.jpg" width="196" height="57" border="0"></a></font></b></td>
+		<td width="33%" align="center">
+		<font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/sot_23-5.gif" width="166" height="130" border="0"></font></td>
+	</tr>
+	<tr>
+		<td width="33%" align="center"><b><font face="Georgia">
+		Piedinatura</font></b></td>
+		<td width="33%" align="center"><b><font face="Georgia">
+		<a target="_blank" href="https://win.adrirobot.it/datasheet/integrati/pdf/rt9013.pdf">Datasheet</a></font></b></td>
+		<td width="33%" align="center"><b><font face="Georgia">Foto dell'integrato</font></b></td>
+	</tr>
+</tbody></table>
+<hr color="#FF0000">
+<table id="table55" width="100%" cellspacing="0" cellpadding="0" border="1">
+	<tbody><tr>
+		<td colspan="3" width="100%" align="center">
+		<b><font face="Georgia"><a name="CH340G">CH340G</a>&nbsp; USB to serial 
+		chip </font></b></td>
+	</tr>
+	<tr>
+		<td width="33%" align="center">
+		<font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/ch340g_pin.jpg" width="134" height="138" border="0"></font></td>
+		<td width="33%" align="center">
+		<b><font face="Georgia">
+				<img src="Modulo%20Wemos%20D1%20Mini_files/pdficon.gif" width="28" height="31" border="0"></font></b><p>
+		<font face="Georgia">
+		<a target="_blank" href="http://www.wch.cn/">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/wch_logo.jpg" width="167" height="54" border="0"></a></font></p></td>
+		<td width="33%" align="center">
+		<font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/ch340g_foto.gif" width="200" height="150" border="0"></font></td>
+	</tr>
+	<tr>
+		<td width="33%" align="center"><b><font face="Georgia">
+		Piedinatura</font></b></td>
+		<td width="33%" align="center"><b><font face="Georgia">
+		<a target="_blank" href="https://win.adrirobot.it/datasheet/speciali/pdf/CH340DS1.PDF">Datasheet</a></font></b></td>
+		<td width="33%" align="center"><b><font face="Georgia">Foto dell'integrato</font></b></td>
+	</tr>
+</tbody></table>
+<hr color="#FF0000">
+<table id="table57" width="100%" cellspacing="0" cellpadding="0" border="1">
+	<tbody><tr>
+		<td colspan="3" width="100%" align="center">
+		<b><font face="Georgia"><a name="B5819">B5819</a> Surface mount schottky 
+		barrier rectifiers </font></b></td>
+	</tr>
+	<tr>
+		<td width="33%" align="center">
+		<font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/diodo.gif" width="143" height="69" border="0"></font></td>
+		<td width="33%" align="center">
+		<b><font face="Georgia">
+				<img src="Modulo%20Wemos%20D1%20Mini_files/pdficon.gif" width="31" height="31" border="0"><br>
+		<a href="http://www.liteonit.com/">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/liteon_logo.jpg" width="158" height="40" border="0"></a></font></b></td>
+		<td width="33%" align="center">
+		<font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/ss1p3l_foto.jpg" width="79" height="51" border="0"></font></td>
+	</tr>
+	<tr>
+		<td width="33%" align="center"><b><font face="Georgia">
+		Piedinatura</font></b></td>
+		<td width="33%" align="center"><b><font face="Georgia">
+		<a target="_blank" href="https://win.adrirobot.it/datasheet/diodi/pdf/B5819.pdf">Datasheet</a></font></b></td>
+		<td width="33%" align="center"><b><font face="Georgia">Foto</font></b></td>
+	</tr>
+</tbody></table>
+<hr color="#FF0000">
+<table id="table56" width="100%" cellspacing="0" cellpadding="0" border="1">
+	<tbody><tr>
+		<td colspan="3" width="100%" align="center">
+		<b><font face="Georgia">Transistor NPN <a name="S8050_SOT23">S8050 SOT23</a></font></b></td>
+	</tr>
+	<tr>
+		<td width="33%" align="center">
+		<font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/sot_23_1.jpg" width="102" height="101" border="0"></font></td>
+		<td width="33%" align="center">
+		<b><font face="Georgia">
+				<img src="Modulo%20Wemos%20D1%20Mini_files/pdficon.gif" width="28" height="31" border="0"></font></b></td>
+		<td width="33%" align="center">
+		<font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/9013_foto.jpg" width="105" height="96" border="0"></font></td>
+	</tr>
+	<tr>
+		<td width="33%" align="center"><b><font face="Georgia">
+		Piedinatura</font></b></td>
+		<td width="33%" align="center"><b><font face="Georgia">
+		<a target="_blank" href="https://win.adrirobot.it/datasheet/transistor/pdf/S8050%20_OT-23.pdf">Datasheet</a></font></b></td>
+		<td width="33%" align="center"><b><font face="Georgia">Foto del 
+		transistor</font></b></td>
+	</tr>
+</tbody></table>
+<p align="center">
+<b><font size="5" face="Consolas" color="#00979D">
+<a name="Impostazione_dellIDE_di_Arduino">Impostazione dell'IDE di 
+Arduino</a></font></b></p>
+<p align="center">
+		<b><font size="5" face="Consolas" color="#00979D">
+		<a name="Installazione_del_driver_per_il_chip_CH340G">Installazione del 
+		driver per il chip CH340G</a></font></b></p>
+<p style="margin-top: 0; margin-bottom: 0" align="justify">
+		<font face="Georgia">Come spiegato la scheda utilizza come convertitore USB-seriale il chip 
+		<b><a href="#CH340G">CH340G</a></b>&nbsp; 
+		invece che il più diffuso chip di FTDI o Atmega32U4, siccome Windows non supporta 
+		nativamente questo chip, il modulo non viene riconosciuto.</font></p>
+<p align="center">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/arduino_nano_driver_01.jpg" width="249" height="206" border="0"></p>
+<p style="margin-top: 0; margin-bottom: 0" align="justify">
+		<font face="Georgia">Per questo motivo è necessario <b>
+		<a target="_blank" href="http://www.wch.cn/product/CH340.html">scaricare il driver</a></b> dal sito ufficiale del fornitore 
+		(sfortunatamente è in cinese).</font></p>
+<p style="margin-top: 0; margin-bottom: 0" align="justify">
+		<font face="Georgia">Una volta eseguito l’unzip del pacchetto, 
+		è possibile procedere con l’aggiornamento del driver per la periferica:</font></p>
+<p style="margin-top: 0; margin-bottom: 0" align="justify">
+		&nbsp;</p>
+<p style="margin-top: 0; margin-bottom: 0" align="center">
+		<font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/arduino_nano_driver_02.jpg" width="416" height="193" border="0"></font></p>
+<p style="margin-top: 0; margin-bottom: 0" align="center">
+		&nbsp;</p>
+<p style="margin-top: 0; margin-bottom: 0" align="justify">
+		<font face="Georgia">Per cui si dovrà lanciare il programma 
+		SETUP.EXE</font></p>
+<p style="margin-top: 0; margin-bottom: 0" align="center">
+		&nbsp;</p>
+<p style="margin-top: 0; margin-bottom: 0" align="center">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/arduino_nano_driver_03.jpg" width="420" height="261" border="0"></p>
+<p style="margin-top: 0; margin-bottom: 0" align="center">
+		&nbsp;</p>
+<p style="margin-top: 0; margin-bottom: 0" align="justify">
+		<font face="Georgia">Dopo l'apertura della finestra si effettuerà 
+		l'installazione dei driver, che avverrà in automatico premendo 
+		INSTALL<br>
+		A fine procedura sarà mostra la seguente finestra</font></p>
+<p style="margin-top: 0; margin-bottom: 0" align="justify">
+		&nbsp;</p>
+<p style="margin-top: 0; margin-bottom: 0" align="center">
+		<font face="Georgia">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/arduino_nano_driver_04.jpg" width="311" height="126" border="0"></font></p>
+<p style="margin-top: 0; margin-bottom: 0" align="justify">
+		&nbsp;</p>
+<p style="margin-top: 0; margin-bottom: 0" align="justify">
+		<font face="Georgia">A questo punto collegando il modulo, questo 
+		sarà riconosciuto e Windows configurerà correttamente la nuova porta COM</font></p>
+<p align="center">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/arduino_nano_driver_05.jpg" width="319" height="309" border="0"></p>
+<p align="center">
+		<b><font size="5" face="Consolas" color="#00979D">
+		<a name="Installazione_del_driver_della_scheda">Installazione del 
+		driver della scheda</a></font></b></p>
+<p align="justify"><font face="Georgia">Per programmare il modulo <b>WeMos D1 
+mini </b>utilizzeremo l'IDE di Arduino, per cui se non già installato occorrerà scaricare e installare 
+l'ultima versione dal sito ufficiale (<b><a target="_blank" href="https://www.arduino.cc/en/main/software">https://www.arduino.cc/en/main/software</a></b> 
+).</font></p>
+<p align="justify"><font face="Georgia">A questo punto dovremmo aggiungere le 
+informazioni per le schede ESP8266 all'Arduino.&nbsp; Per cui aperto l'IDE di 
+Arduino, andare al menu <b>File </b>-&gt; <b>Impostazioni </b>-&gt;<b> URL aggiuntive 
+per il Gestore schede, </b>l'indirizzo da inserire è</font></p>
+<p align="center"><b>
+<font face="Georgia">
+<a class="urlextern" title="http://arduino.esp8266.com/versions/2.3.0/package_esp8266com_index.json" rel="nofollow" href="http://arduino.esp8266.com/versions/2.3.0/package_esp8266com_index.json">
+http://arduino.esp8266.com/versions/2.3.0/package_esp8266com_index.json</a></font></b><font face="Georgia"> (Figura 
+1).</font></p>
+<p align="center">
+<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_Arduino_ide-01.jpg" width="752" height="677" border="0"></p>
+<p align="center"><b><font face="Georgia">Inserimento URL aggiuntiva per 
+gestione modulo - Figura 1</font></b></p>
+<p align="justify"><font face="Georgia">Per impostare la scheda <b>WeMos D1 mini</b>, andare 
+al menu <b>Strumenti -&gt; Scheda -&gt; Gestione schede</b> (Figura 2)</font></p>
+<p align="center">
+<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_Arduino_ide-02.jpg" width="713" height="303" border="0"></p>
+<p align="center"><b><font face="Georgia">Gestione schede - Figura 2</font></b></p>
+<p align="left"><font face="Georgia">Quando apparirà la scheda Gestore schede 
+digitare <b>ESP8266</b> e quindi installare i driver cliccando su <b>Installa
+</b>(figura 3)</font></p>
+<p align="center">
+<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_Arduino_ide-03a.jpg" width="800" height="222" border="0"></p>
+<p align="center">
+<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_Arduino_ide-03b.jpg" width="800" height="227" border="0"></p>
+<p align="center"><b><font face="Georgia">Installazione driver schede - Figura 3</font></b></p>
+<p align="justify"><font face="Georgia">A questo punto tornare al menù <b>Strumenti 
+-Gestore schede</b> ... quindi selezionare nella sezione<b> ESP8266 Modules </b>
+il modello<b> WeMos D1 R2 &amp; mini,</b> (Figura 4). In questo modo sarà possibile 
+programmare il modulo.</font></p>
+<p align="center">
+<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_Arduino_ide-04.jpg" width="637" height="637" border="0"></p>
+<p align="center"><b><font face="Georgia">Selezione scheda </font></b><font face="Georgia">
+<b>WeMos D1 R2 &amp; mini </b></font><b><font face="Georgia">- Figura 4 </font></b></p>
+<h1 align="center"><font size="5" face="Consolas" color="#00979D">
+<a name="Esempi_di_utilizzo_del_modulo">Esempi di utilizzo del modulo</a></font></h1>
+<h1 align="center"><b><font size="5" face="Consolas" color="#00979D">
+<a name="Lettura_di_temperatura_e_umidità_con_sensore_DH11">Lettura di 
+temperatura e umidità con sensore DH11</a></font></b></h1>
+<p style="margin-top: 0; margin-bottom: 0" align="justify"><font face="Georgia">
+Tra i molti modelli di shield realizzati appositamente per il modulo <b>WeMos D1 
+mini</b> troviamo il <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/dht11_shield_for_wemos_d1_mini.htm">Wemos DHT Shield</a></b> che utilizza il sensore di umidità 
+e temperatura DHT11, il sensore è calibrato dal costruttore e non richiede 
+componenti aggiuntivi, è in grado di misurare la temperatura in una gamma 
+compresa tra 0°C e +60°C con una precisione di ±2°C e l'umidità in una gamma 
+compresa tra 20%RH e 90%RH con una precisione di ±5RH.</font></p>
+<table id="table64" width="100%" border="0">
+	<tbody><tr>
+		<td align="center">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/WeMos_d1_mini-08.jpg" width="400" height="400" border="0"><p align="center">
+		<b><font face="Georgia">Vista frontale dello Shield DHT11</font></b></p></td>
+		<td align="center">
+		<img src="Modulo%20Wemos%20D1%20Mini_files/WeMos_d1_mini-14.jpg" width="400" height="400" border="0"><p align="center">
+		<b><font face="Georgia">Shield DHT11 con connettori montati</font></b></p></td>
+	</tr>
+</tbody></table>
+<p align="left"><font face="Georgia">In questo esempio utilizziamo il modulo 
+<b><a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/wemos_d1_mini.htm">WeMos D1 mini</a> </b>per leggere i dati di temperatura ed umidità forniti dallo
+<b><a href="#Shield_con_sensore_DH11">shield sensore 
+DHT11</a></b> e invieremo i dati sul <b>
+<a target="_blank" href="https://thingspeak.com/">canale Thinkspeak</a></b>,&nbsp; che è una piattaforma Internet che 
+consente di raccogliere e memorizzare i dati del sensore nel cloud e di 
+sviluppare applicazioni IoT. </font></p>
+<p align="left"><font face="Georgia">Per maggiori informazioni, schema e 
+programma <b><a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/dht11_shield_for_wemos_d1_mini.htm">vedere 
+la relativa pagina</a></b>.</font></p>
+<p align="center">
+<img src="Modulo%20Wemos%20D1%20Mini_files/risultati_canale_thingspeak.jpg" width="912" height="647" border="0"></p>
+<p align="center">
+<b><a name="Wemos_D1_mini_multi_test_shield">
+<font size="5" face="Consolas" color="#00979D">Wemos D1 mini multi 
+		test shield</font></a></b></p>
+<p align="justify"><font face="Georgia">Se si possiede una scheda <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/wemos_d1_mini.htm">Wemos D1 mini </a></b>è si 
+vogliono sperimentare la serie di sensori 
+contenuti nella confezione "<b><a target="_self" href="https://win.adrirobot.it/sensori/37_in_1/37_In_1_Sensor_Module_Board_Set_Kit_For_Arduino.htm">37 
+in 1 Sensor Module Board Set</a></b>" che è venduta da molti siti è possibile 
+utilizzare questo <b><a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/multi_test_wemos_shield.html">Wemos D1 mini multi 
+		test shield</a>.<br>
+</b>Sullo shield sono disponibili molti connettori che risultano già opportunamente 
+collegati con le porte digitali o analogiche della scheda <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/wemos_d1_mini.htm">Wemos D1 mini </a></b>. Sulla 
+scheda è inoltre già presente uno stadio di alimentazione che permette di 
+alimentare il tutto per esempio con una batteria 9V.<br>
+In realtà, la scheda, oltre ai sensori presenti nel kit "<b>37 in 1 Sensor 
+Module Board Set</b>" permette di testare altri sensori, servo, ecc per un 
+totale di oltre 30 tipi, la presenza di un connettore&nbsp; bus I2C espande 
+ulteriormente la tipologia di dispositivi che lo shield permette.<br>
+Se si monta sul <b><a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/wemos_d1_mini.htm">Wemos D1 mini
+</a>&nbsp;</b>il relativo <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/OLED_Shield_for_wemos_d1_mini.htm">OLED Shield</a>
+</b>si potranno visionare sul display da 0,66 "64 x 48 pixel i valori misurati 
+oppure gli stati logici.</font></p>
+<p align="center">
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/multi_test_wemos_shield.html">
+<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_multi_test_shield_montato05.jpg" width="600" height="450" border="0"></a></p>
+<p align="center">
+<b><font size="5" face="Consolas" color="#00979D">
+<a name="Gestione_display_OLED_Shield">Gestione display OLED Shield</a></font></b></p>
+<p align="justify">
+<font face="Georgia">Il modulo <b><a href="#Wemos_D1_mini">Wemos D1 Mini</a> </b>
+può gestire un display OLED, in questo caso rappresentato montato su<b> </b>l'<b><a target="_blank" href="https://www.homotix.it/vendita/wemos/oled-shield-v110-for-wemos-mini">OLED Shield</a> </b>, 
+nell'esempio si è utilizzato un <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/DC_Power_shield_for_wemos_d1_mini.htm">DC Power Shield</a>
+</b>per l'alimentazione. Per maggiori informazioni, schema e 
+programma <b><a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/OLED_Shield_for_wemos_d1_mini.htm">vedere 
+la relativa pagina</a></b>.</font></p>
+<p align="center">
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/OLED_Shield_for_wemos_d1_mini.htm">
+<img src="Modulo%20Wemos%20D1%20Mini_files/Wemos_DC_Power_test.jpg" width="640" height="360" border="0"></a></p>
+<p align="center">
+<b><font size="5" face="Consolas" color="#00979D">
+<a name="Gestione_MatrixLED_Shield">Gestione MatrixLED Shield</a></font></b></p>
+<p align="justify">
+<font face="Georgia">Il modulo <b><a href="#Wemos_D1_mini">Wemos D1 Mini</a> </b>
+può gestire una matrice di led 8x8,&nbsp; il modulo è chiamato <b><a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/Matrix_LED_Shield_for_wemos_d1_mini.htm">Matrix LED shield</a> </b>, 
+nell'esempio si è utilizzato un <b>
+		<a target="_blank" href="https://win.adrirobot.it/wemos_d1_mini/battery_shield_for_wemos_d1_mini.htm">Battery Shield</a> </b>per l'alimentazione. Per maggiori informazioni, schema e 
+programma <b><a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/Matrix_LED_Shield_for_wemos_d1_mini.htm">vedere 
+la relativa pagina</a></b>.</font></p>
+<p align="center">
+<img src="Modulo%20Wemos%20D1%20Mini_files/Matrix_Led_Shield_test.jpg" width="640" height="360" border="0"></p>
+<p align="center">
+	<b><font size="5" face="Consolas" color="#00979D">
+<a name="Wemos_D1_mini_meter_shield">Wemos D1 mini meter shield</a></font></b></p>
+<p align="left">
+<font face="Georgia">Progetto per realizzare un <b>
+<a target="_self" href="https://win.adrirobot.it/EasyEDA/EasyEDA_Wemos_D1_mini_meter_shield.htm">Meter shield per Wemos D1 mini</a></b>, 
+lo shield una volta collegato alla scheda <b>
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/wemos_d1_mini.htm">Wemos D1 Mini</a></b> o <b>Wemos Pro </b>
+permette di visualizzare su un piccolo display OLED la misura delle distanza in 
+cm che separa il sensore dall'oggetto posto frontalmente al sensore.<br>
+Il sensore utilizzato è di tipo </font><b><font face="Georgia">
+	<a target="_self" href="https://win.adrirobot.it/sonar/HC-SR04/Sensore_sonar_HC-SR04.htm">
+ultrasuoni HC-SR04</a></font></b><font face="Georgia"> il quale non misura direttamente la 
+				distanza, ma fornisce il tempo impiegato da segnale sonoro 
+				per raggiungere un ostacolo e ritornare di nuovo al sensore. In 
+base al tempo viene calcolata la distanza.</font></p>
+<p align="center">
+<a target="_self" href="https://win.adrirobot.it/EasyEDA/EasyEDA_Wemos_D1_mini_meter_shield.htm">
+<img src="Modulo%20Wemos%20D1%20Mini_files/sonar_meter_shield_montato%25205.jpg" width="640" height="360" border="0"></a></p>
+      <p align="center"><b><font size="5" face="Consolas" color="#00979D">
+		<a name="Sensore_di_luce_TSL2561">Sensore di luce TSL2561</a></font></b></p>
+<p align="left"><font face="Georgia">Il <b>
+<a target="_self" href="https://win.adrirobot.it/sensori/tsl2561/sensore_tsl2561.htm">sensore di luminosità TSL2561
+</a></b>prodotto dalla <b>AMS</b> è un sensore avanzato di luce digitale , ideale per l'uso in 
+una vasta gamma di condizioni di luce. Rispetto alle <b>
+<a href="https://win.adrirobot.it/sensori/37_in_1/KY-018-Modulo_fotoresistenza.htm">cellule CdS 
+a basso costo</a></b>, questo sensore è più preciso, consentendo 
+misure direttamente in lx e può essere configurato per differenti range di misura in 
+modo da rilevare gamme di luce comprese tra 0,1 - 40.000 lx.<br>
+Nel programma di test tramite il modulo <b>WeMos D1 mini </b> del 
+sensore <b>TLS2561, il valore della luminosità </b>viene mostrato all'interno 
+della finestra del Monitor seriale. La lettura è effettuata&nbsp; ogni 250 ms.<br>
+I pin <b>SCL</b> e <b>SDA</b> del sensore sono collegati rispettivamente a <b>D1
+</b>e <b>D2</b> del modulo <b>WeMos D1 mini </b> e gestiti dalla libreria<b> 
+Wire.</b></font></p>
+<p align="center">
+<img src="Modulo%20Wemos%20D1%20Mini_files/tsl2561_circuit_test-wemos.jpg" width="600" height="351" border="0"></p>
+<p align="center">
+		<b><font size="5" face="Consolas" color="#00979D">
+<a name="Display_65k_Colori_OLED_96x64_interfaccia_SPI">Display 65k Colori OLED 
+		96x64
+		interfaccia 
+		SPI</a></font></b></p>
+<p align="justify">
+<font face="Georgia">Questo <b>
+	<a target="_self" href="https://win.adrirobot.it/display_OLED/Display_colori_OLED_96x64_I2C_SSD1331.htm">display OLED da 0.95"risoluzione 
+	96x64 pixel, 65536 Colori</a></b> è basato sul <b>
+	driver SSD1331</b> ed è dotato di interfaccia di comando SPI, può essere alimentato con una tensione 
+	compresa tra i 3.3V - 5V.</font></p>
+<p align="center">
+<a target="_self" href="https://win.adrirobot.it/display_OLED/Display_colori_OLED_96x64_I2C_SSD1331.htm">
+<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_d1_test.jpg" width="640" height="360" border="0"></a></p>
+<p>&nbsp;</p>
+<table id="table70" width="100%" border="0">
+	<tbody><tr>
+		<td align="center">
+		<table id="table71" width="58%" border="0">
+			<tbody><tr>
+				<td><b>
+	<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="Modulo%20Wemos%20D1%20Mini_files/a.html" allowtransparency="true" allowfullscreen="true" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white none repeat scroll 0% 0%; max-width: 658px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;" height="946" frameborder="0"></iframe>
+<script async="" defer="defer" src="Modulo%20Wemos%20D1%20Mini_files/embed.js"></script></b></td>
+			</tr>
+		</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<p align="center">
+<b><font size="5" face="Consolas" color="#00979D">
+<a name="Motor_Controller_per_DC_Motor_FT-SMC-2CH">Motor 
+	Controller per DC Motor
+	FT-SMC-2CH</a></font></b></p>
+<p align="justify">
+<font face="Georgia">Il modulo driver per motori </font>
+<font face="Arial"> <b>
+<a target="_self" href="https://win.adrirobot.it/motor_driver/FT-SMC-2CH/motor_driver_FT-SMC-2CH.htm" style="color: #00c; font-family: arial,sans-serif"><font face="Georgia">FT-SMC-2CH</font></a></b></font><font face="Georgia"> prodotto 
+dalla </font><font face="Arial"> <b>
+<font face="Georgia">FEETECH 
+		RC Model Co.,Ltd.</font></b><font face="Georgia"> è di piccole dimensioni, misurando solo 34x25 
+mm, permette di pilotare due motori a corrente continua, per esempio il modello 
+FM90 prodotto sempre da </font> <b>
+<font face="Georgia">FEETECH, </font></b><font face="Georgia"> con controllo di 
+rotazione continua bidirezionale, la corrente massima è 1,3 A per una tensione 
+consigliata di 6V.</font></font></p>
+<p align="center">
+<a target="_self" href="https://win.adrirobot.it/motor_driver/FT-SMC-2CH/motor_driver_FT-SMC-2CH.htm">
+<img src="Modulo%20Wemos%20D1%20Mini_files/Foto_test_FT-SMC-2CH.jpg" width="640" height="360" border="0"></a></p>
+<table id="table74" width="100%" border="0">
+	<tbody><tr>
+		<td align="center">
+		<table id="table75" width="54%" border="0">
+			<tbody><tr>
+				<td>
+				<p align="center">&nbsp;</p><iframe class="instagram-media instagram-media-rendered" id="instagram-embed-1" src="Modulo%20Wemos%20D1%20Mini_files/a_002.html" allowtransparency="true" allowfullscreen="true" data-instgrm-payload-id="instagram-media-payload-1" scrolling="no" style="background: white none repeat scroll 0% 0%; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;" height="846" frameborder="0"></iframe> <script async="" src="Modulo%20Wemos%20D1%20Mini_files/embed.js"></script></td>
+			</tr>
+		</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<p align="center">
+<b><font size="5" face="Consolas" color="#00979D">
+<a name="Convertitore_ADC_16-bit_4_Canali_ADS1115">Convertitore ADC 16-bit 4 
+Canali ADS1115</a></font></b></p>
+<p align="justify"><font face="Georgia">Il <b>
+<a target="_self" href="https://win.adrirobot.it/ADC_ADS1115/ADC_ADS1115.htm">Modulo Convertitore ADC 16-bit 4 
+Canali ADS1115</a></b> può essere utilizzato per incrementare le porte analogiche 
+del modulo <b>Wemos D1 mini</b>, permettendo di avere anche un ADC ad elevata precisione. L'integrato utilizzato tipo ADS1115 
+offre una precisione di 16-bit con 860 campionamenti al secondo, i 4 ingressi 
+possono essere configurati come 4 canali single-ended oppure come 2 canali 
+differenziali. <br>
+Il modulo si interfaccia tramite I2C e può funzionare con una tensione di 
+alimentazione compresa tra 2Vcc e 5Vcc, all'interno del chip ADS1115 sono&nbsp;anche 
+presenti&nbsp;un amplificatore con un guadagno programmabile fino a 16 volte ed un 
+comparatore.</font></p>
+<p align="center">
+<a target="_self" href="https://win.adrirobot.it/ADC_ADS1115/ADC_ADS1115.htm">
+	<img src="Modulo%20Wemos%20D1%20Mini_files/ads1115_foto_Test.jpg" width="640" height="640" border="0"></a></p>
+<div align="center">
+<table id="table98" width="100%" border="0">
+	<tbody><tr>
+		<td align="center">
+		<table id="table99" width="61%" border="0">
+			<tbody><tr>
+				<td width="50%" align="center">
+				&nbsp;<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-2" src="Modulo%20Wemos%20D1%20Mini_files/a_003.html" allowtransparency="true" allowfullscreen="true" data-instgrm-payload-id="instagram-media-payload-2" scrolling="no" style="background: white none repeat scroll 0% 0%; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;" height="882" frameborder="0"></iframe> <script async="" src="Modulo%20Wemos%20D1%20Mini_files/embed.js"></script></td>
+			</tr>
+		</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+	</div>
+<p align="center">
+&nbsp;</p>
+<p align="center">
+<b><font size="5" face="Consolas" color="#00979D">
+<a name="Test_modulo_KY-009_RGB_full_color_LED_SMD_module">Test modulo KY-009 RGB 
+full color LED SMD module</a></font></b></p>
+<p align="justify">
+<font face="Georgia">Gestione del modulo <b>
+KY-009 RGB 
+full color LED SMD module, </b>che si presenta come una piccolo circuito che 
+misura 18,5 millimetri x 15mm, su di esso è montato un LED RGB tipo 5050 SMD e 
+un connettore a 4 pin.
+Il LED può emette una ampia gamma di colori mescolando rosso, verde e blu.</font></p>
+<p align="center">
+<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/multi_test_wemos_shield.html">
+<img src="Modulo%20Wemos%20D1%20Mini_files/wemos_multi_test_shield_montato02.jpg" width="600" height="337" border="0"></a></p>
+<p align="center">
+&nbsp;</p>
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="Modulo%20Wemos%20D1%20Mini_files/translate_24dp.png" alt="Google Traduttore" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Testo originale</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribuisci a una traduzione migliore</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><table id="table1" width="100%" cellspacing="0" cellpadding="0" border="1">
+  <tbody><tr>
+    <td colspan="2" width="45%"><font face="Georgia"><b>Elenco
+      revisioni:</b></font></td></tr>
+	<tr>
+    <td width="11%">
+	<p align="center"><font face="Georgia">27/03/2019</font></p></td><td width="88%">
+	<font face="Georgia">Aggiornato pagina e inserito esempio
+	vari esempi di utilizzo del modulo</font></td>
+	</tr>
+	<tr>
+    <td width="11%">
+	<p align="center"><font face="Georgia">10/04/2017</font></p></td><td width="88%">
+	<font face="Georgia">Inserito esempio 
+	<b> 
+	<a target="_self" href="https://win.adrirobot.it/wemos_d1_mini/OLED_Shield_for_wemos_d1_mini.htm">display OLED</a></b></font></td>
+	</tr>
+	<tr>
+    <td width="11%">
+	<p align="center"><font face="Georgia">03/12/2017</font></p></td><td width="88%">
+	<font face="Georgia">Aggiornato la pagina</font></td>
+	</tr>
+	<tr>
+    <td width="11%">
+	<p align="center"><font face="Georgia">15/10/2017</font></p></td><td width="88%">
+	<font face="Georgia">Emissione 
+	preliminare</font></td></tr></tbody></table><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><ins class="adsbygoogle adsbygoogle-noablate" style="display: none !important;" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_1" name="aswift_1" src="Modulo%20Wemos%20D1%20Mini_files/ads_002.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-load-complete="true" frameborder="0"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_7553785426337" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body><iframe id="google_esf" name="google_esf" src="Modulo%20Wemos%20D1%20Mini_files/zrt_lookup.html" style="display: none;" data-ad-client="ca-pub-6628714137256289"></iframe></html>

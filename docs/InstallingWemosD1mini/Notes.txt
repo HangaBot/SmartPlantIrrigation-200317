@@ -1,0 +1,8 @@
+L'indirizzo URL corretto per installare il software di piattaforma di  esp8266 è
+
+https://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+
+La descrizione del progetto si trova 
+
+https://github.com/esp8266/Arduino

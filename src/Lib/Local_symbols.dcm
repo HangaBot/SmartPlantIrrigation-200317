@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP CD74HC4067M
+D High-Speed CMOS Logic 16-Channel Analog Multiplexer/Demultiplexer, SOIC-24
+K multiplexer demultiplexer mux demux
+F http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf
+$ENDCMP
+#
+$CMP CP1_Small
+D Polarized capacitor, small US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP MC24356
+D Generic screw terminal, single row, 01x02
+K screw terminal
+F http://www.farnell.com/datasheets/1754378.pdf?_ga=2.112278340.1917198769.1584542017-1069744998.1510563350&_gac=1.48966100.1584603029.CjwKCAjwsMzzBRACEiwAx4lLG-z_o7nyNHwSEm9eu0a2flhQOrMt3qxe1UrZHRpjpJQrqAj13HdrFhoCqCIQAvD_BwE
+$ENDCMP
+#
+$CMP R
+D Resistor
+K R res resistor 100R 0402
+F ~
+$ENDCMP
+#
+#End Doc Library

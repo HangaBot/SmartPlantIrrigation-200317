@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LP38692MP-ADJ
+D 1-A Low Dropout CMOS Linear Regulator With Adjustable Output and enable with Enable
+K LDO, Voltage Regulators
+F http://www.ti.com/lit/ds/snvs323i/snvs323i.pdf
+$ENDCMP
+#
+#End Doc Library
